@@ -1,0 +1,29 @@
+#TitleBar {
+    margin-top: 5vh !important;
+}
+#TitleTxt{
+    font-family: 'Times New Roman' !important;
+    font-size: 10vmin;
+    
+}
+#PhraseContainer{
+    margin-top: 5vh;
+    height: 80vh;
+    
+}
+
+.col-sm-4{
+    font-size: 100%;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.texto{
+    margin-right: 5vw; 
+    font-family: 'Times New Roman';
+    
+}
