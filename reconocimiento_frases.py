@@ -1,4 +1,6 @@
+from msvcrt import getwch
 import speech_recognition as sr
+from os import getcwd
 
 def transform():
     r = sr.Recognizer()
@@ -21,7 +23,7 @@ def transform():
 lista_frases = []
 
 def grabar_archivo(frase):
-    with open("frases.txt", 'a', encoding='utf-8') as archivo:
+    with open(getcwd() + "/API_WEB/RESTAPI/frases.txt", 'a', encoding='utf-8') as archivo:
         archivo.write(f'{frase} \n')
 
 def main():
