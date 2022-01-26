@@ -19,8 +19,6 @@ def transform():
         except:
             return "Eperando..."
 
-lista_frases = []
-
 def grabar_archivo(frase):
     with open(getcwd() + "/API_WEB/RESTAPI/frases.txt", 'a', encoding='utf-8') as archivo:
         archivo.write(f'{frase} \n')
