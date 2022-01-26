@@ -21,7 +21,7 @@ def transform():
 lista_frases = []
 
 def grabar_archivo(frase):
-    with open("frases.txt", 'a') as archivo:
+    with open("frases.txt", 'a', encoding='utf-8') as archivo:
         archivo.write(f'{frase} \n')
 
 def main():
