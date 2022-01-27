@@ -1,13 +1,13 @@
 
 from flask import jsonify
-
+from os import getcwd
 
 def c_print():
     return "LOREM EPSILUM"
 
 #Ruta('txt')
 def c_txt():
-    text = open('frases.txt','r')
+    text = open(getcwd() +'\\API_WEB\\RESTAPI\\frases.txt','r')
     phrases ={}
     key = 0
     for i in text:
