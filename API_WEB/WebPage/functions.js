@@ -20,6 +20,15 @@ const GET_FRASES = async() =>{
     add_p(frases);
 }
 
+
+const activateBtn = document.getElementById("AddPhraseBtn");
+
+activateBtn.addEventListener("click", function(){
+    GET_FRASES();
+    
+});
+
+/* TODO: DEBEMOS EVITAR QUE SI SE LE DA REFRESH A LA PÁGINA QUE NO SE ACTIVE EL MICRÓFONO.
 window.addEventListener("load" , function(){
     GET_FRASES();
-});
+});*/
