@@ -3,7 +3,7 @@ from flask import jsonify
 
 
 def c_print():
-    return "LOREM EPSILUM"
+    return "LOREM ipsum"
 
 #Ruta('txt')
 def c_txt():
