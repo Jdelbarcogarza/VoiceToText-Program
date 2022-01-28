@@ -24,7 +24,8 @@ def c_txt():
         key += 1
     text.close()
     
-    # aqui se imprime el diccionario.
+    # aqui se imprime el diccionario para debbugear.
+    print("Diccionario con frases recopiladas:")
     print(phrases)
 
     json_phrases = jsonify(phrases)
