@@ -8,7 +8,7 @@ def listen_speech():
         phrase = r.listen(source)
         
         try: 
-            print ('Recibido')
+            print ('\nMensaje recibido\n')
             text = r.recognize_google(phrase, language="es")
             return (text)
         except sr.UnknownValueError:
