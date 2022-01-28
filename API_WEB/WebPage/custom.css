@@ -1,15 +1,22 @@
 #TitleBar {
-    margin-top: 5vh !important;
+    margin-top: 1vh !important;
+    display: flex;
+    justify-content: center;
 }
 #TitleTxt{
     font-family: 'Times New Roman' !important;
-    font-size: 10vmin;
+    font-size: 8vmin;
     
 }
 #PhraseContainer{
     margin-top: 5vh;
     height: 80vh;
     
+}
+
+#AddPhraseBtn {
+    display: flex;
+    justify-content: center;
 }
 
 .col-sm-4{
