@@ -1,9 +1,13 @@
 
 function add_p(list){
     for(var key of Object.keys(list)){
-        const h1 = document.createElement("h3");
-        h1.innerText = list[key];
-        document.body.append(h1)
+        const box = document.getElementById("TextBox");
+        const div = document.createElement("div");
+        div.innerText = list[key];
+        div.className ="texto";
+        box.appendChild(div)
+
+        // Se imprime en la consola del browser cada una de las frases que contiene el diccionario.
         console.log(key + " : " + list[key]); 
     }
 }
