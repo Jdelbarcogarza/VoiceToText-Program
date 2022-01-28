@@ -14,9 +14,10 @@
     
 }
 
-#AddPhraseBtn {
+#btnSection{
     display: flex;
     justify-content: center;
+
 }
 
 .col-sm-4{
