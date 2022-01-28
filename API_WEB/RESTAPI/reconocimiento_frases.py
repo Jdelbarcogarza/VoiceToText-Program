@@ -6,6 +6,7 @@ def listen_speech():
     with sr.Microphone() as source:
         r.pause_threshold = 0.8
         phrase = r.listen(source)
+        
         try: 
             print ('Recibido')
             text = r.recognize_google(phrase, language="es")
