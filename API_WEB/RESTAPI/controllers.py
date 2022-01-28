@@ -18,8 +18,8 @@ def c_txt():
     # se colocan todas las palabras dentro del archivo en un diccionario
     phrases ={}
     key = 0
+
     for i in text:
-        
         phrases[str(key)] = i
         key += 1
     text.close()
