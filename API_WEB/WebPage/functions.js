@@ -6,6 +6,8 @@ function add_p(list){
         div.innerText = list[key];
         div.className ="texto";
         box.appendChild(div)
+
+        // Se imprime en la consola del browser cada una de las frases que contiene el diccionario.
         console.log(key + " : " + list[key]); 
     }
 }
