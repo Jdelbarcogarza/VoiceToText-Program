@@ -8,10 +8,12 @@ def c_print():
     return "LOREM ipsum"
 
 #Ruta('txt')
-def c_txt():
+def c_txt(phraseID):
 
     phrase = listen_speech()
     write_on_file(phrase)
+
+    return jsonify({phraseID: phrase})
 
     text = open(getcwd() +'\\API_WEB\\RESTAPI\\frases.txt','r', encoding='utf-8')
     
