@@ -15,24 +15,5 @@ def c_txt(phraseID):
 
     return jsonify({phraseID: phrase})
 
-    text = open(getcwd() +'\\API_WEB\\RESTAPI\\frases.txt','r', encoding='utf-8')
-    
-    # se colocan todas las palabras dentro del archivo en un diccionario
-    phrases ={}
-    key = 0
-
-    for i in text:
-        phrases[str(key)] = i
-        key += 1
-    text.close()
-    
-    # aqui se imprime el diccionario para debbugear.
-    print("Diccionario con frases recopiladas:")
-    print(phrases)
-
-    json_phrases = jsonify(phrases)
-    #json_phrases.headers.add('Access-Control-Allow-Origin', '*')
-    return json_phrases
-
 if __name__ == "__main__":
     print("Este programa no debe correrse directamente.")
