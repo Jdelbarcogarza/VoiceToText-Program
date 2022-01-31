@@ -16,7 +16,6 @@ def GET_TXT():
 
     global phraseID
     phraseID = phraseID + 1
-    print(phraseID)
 
     return c_txt(phraseID)
 
