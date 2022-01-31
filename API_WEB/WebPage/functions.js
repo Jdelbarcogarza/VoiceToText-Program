@@ -3,6 +3,9 @@ function add_p(list){
     for(var key of Object.keys(list)){
         const box = document.getElementById("TextBox");
         const div = document.createElement("div");
+
+        // set an ID to the last element added
+        div.setAttribute('id',key);
         div.innerText = list[key];
         div.className ="texto";
         box.appendChild(div)
@@ -24,6 +27,9 @@ const GET_FRASES = async() =>{
 const activateBtn = document.getElementById("AddPhraseBtn");
 
 activateBtn.addEventListener("click", function(){
+    
+    // borrar todo el contenido de la página para volverlo a escribir con el método GET_FRASES().
+    
     GET_FRASES();
     
 });
