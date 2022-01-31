@@ -1,3 +1,4 @@
+from contextlib import nullcontext
 import speech_recognition as sr
 from os import getcwd
 
@@ -6,17 +7,18 @@ def listen_speech():
     with sr.Microphone() as source:
         r.pause_threshold = 0.8
         phrase = r.listen(source)
-        
+
         try: 
-            print ('\nMensaje recibido\n')
+            #print ('\nMensaje recibido')
             text = r.recognize_google(phrase, language="es")
             return (text)
         except sr.UnknownValueError:
             print('Perdona no entendi. Repite lo que dijiste')
-            
+            return 'repeat'
+
         except sr.RequestError:
             print('Perdón el servicio esta caido')
-        
+            return 'repeat'
 
 def write_on_file(phrase):
     with open(getcwd() + "/API_WEB/RESTAPI/frases.txt", 'a', encoding='utf-8') as txt_file:
