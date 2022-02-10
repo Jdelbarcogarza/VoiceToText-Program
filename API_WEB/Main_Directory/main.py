@@ -4,7 +4,7 @@ from flask_cors import CORS
 from controllers import *
 
 
-app = Flask(__name__, template_folder= '../WebPage')
+app = Flask(__name__)
 CORS(app)
 
 
