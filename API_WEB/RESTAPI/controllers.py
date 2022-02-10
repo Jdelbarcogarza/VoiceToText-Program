@@ -1,29 +1,52 @@
 
 from flask import jsonify
-from os import getcwd
-from reconocimiento_frases import *
+#from os import getcwd
+#from reconocimiento_frases import *
 
-
-def c_print():
-    return "LOREM ipsum"
 
 #Ruta('txt')
-def c_txt(phraseID):
+def transcript(phraseID):
+    #phrase = listen_speech()
+    phrase = 'repeat'
 
-    phrase = listen_speech()
-
-    # value is an error then just don't send a dictionary value
     if (phrase == 'repeat'):
-        # TODO: this message should be read by the JS code and handle it accordingly.
-        # right now there is an uncaught promise due to a syntax error con the js code because
-        # no json object is being sent.
-        return 'error'
+        return {'error' : 'repeat'}
 
-    # write phrase on file once it is validated.
-    write_on_file(phrase)
+    with open('frases.txt','a+',encoding="utf-8") as file:
+        file.seek(0)
+        data = file.read(100)
+        if len(data)>0:
+            file.write("\n")
 
-    # return json object
-    return jsonify({phraseID: phrase})
+        file.write(phrase)
+        
+    print(phrase)
+    return {phraseID: phrase}
+
+def retrieveData():
+    text = open('frases.txt','r',encoding="utf-8")
+    phrases ={}
+    key = 0
+    for i in text:
+        if i[0] == '#':
+            continue
+
+        phrases[str(key)] = i
+        key += 1
+    text.close()        
+    return phrases
+
+def patchdata(i):
+    i = int(i)
+    print("Patching...")
+    with open('frases.txt','r', encoding= "utf-8") as file:
+        data = file.readlines()
+    print("patching:",data[i], "on text file line:", i + 1)
+    data[i] = "#" + data[i]
+
+    with open('frases.txt','w', encoding= "utf-8") as file:
+        file.writelines(data)
+    
 
 if __name__ == "__main__":
     print("Este programa no debe correrse directamente.")

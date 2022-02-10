@@ -31,7 +31,16 @@
     
 }
 .texto{
+    background: transparent;
+    border: none !important;
     margin-right: 5vw; 
-    font-family: 'Times New Roman';
+}
+.texto:hover{
     
+    
+    margin-right: 5vw; 
+    background-color: rgb(241, 239, 239);
+    border-radius: 25px;
+    color: red !important;
+    border: 2px solid red !important; 
 }
