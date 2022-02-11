@@ -1,13 +1,13 @@
 
 from flask import jsonify
-#from os import getcwd
-#from reconocimiento_frases import *
+from os import getcwd
+from reconocimiento_frases import *
 
 
 #Ruta('txt')
 def transcript(phraseID):
-    #phrase = listen_speech()
-    phrase = 'repeat'
+    phrase = listen_speech()
+    #phrase = 'repeat'
 
     if (phrase == 'repeat'):
         return {'error' : 'repeat'}
