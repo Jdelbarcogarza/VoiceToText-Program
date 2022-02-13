@@ -3,21 +3,21 @@
     display: flex;
     justify-content: center;
 }
+
 #TitleTxt{
     font-family: 'Times New Roman' !important;
-    font-size: 8vmin;
-    
+    font-size: 6vmin;
+    color: white;
 }
+
 #PhraseContainer{
-    margin-top: 5vh;
+    margin-top: 20vh;
     height: 80vh;
-    
 }
 
 #btnSection{
-    display: flex;
     justify-content: center;
-
+    padding-bottom: 15px;
 }
 
 .col-sm-4{
@@ -30,17 +30,20 @@
     justify-content: center;
     
 }
+
 .texto{
     background: transparent;
     border: none !important;
     margin-right: 5vw; 
 }
+
 .texto:hover{
-    
-    
     margin-right: 5vw; 
     background-color: rgb(241, 239, 239);
     border-radius: 25px;
-    color: red !important;
-    border: 2px solid red !important; 
+    color: blue;
+}
+
+body {
+    background-color: white;
 }
