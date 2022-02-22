@@ -4,7 +4,7 @@ const urlload= 'http://127.0.0.1:5000/load'
 const urlpatch= 'http://127.0.0.1:5000/patch-data'
 const recordbtn = document.getElementById("AddPhraseBtn");
 const box = document.getElementById("TextBox");
-const colors = ["#663399","#7953A9","#8B74BD","#4066E0","#22277A" ];
+const colors = ["#707ce3", "#B983FF", "#11468F", "#FFAA4C", "#5089C6", "#035397", "#93329E"];
 const fontfamilies = ["Times new Roman", "Arial", "Lucida Console","Copperplate"]
 const sizes = ["1.5vw","2vw","2.5vw","4vw"];
 
