@@ -1,31 +1,31 @@
-###None
-computadora
-probando
-#None
+####None
+##computadora
+#probando
+##None
 Jambo
 raro
 estado
 #120
+###Hola
+#####probando
 #Hola
-##probando
-Hola
 Bugambilia
-komiload se prende el micro y digo algo
-#borrando
+####komiload se prende el micro y digo algo
+####borrando
 #working
-#conversión
-#Hola
-#cortina
-ratón
-pingüino
-###cigüeña
-None
-niño
-##Hola
-#prueba
-probando
-Hola
-cigüeña
+####conversión
+#####Hola
+##cortina
+##ratón
+#pingüino
+######cigüeña
+#####None
+###niño
+#####Hola
+##prueba
+#probando
+#######Hola
+##cigüeña
 estupefaciente
 necesito comer
 ##ayuda
@@ -42,3 +42,12 @@ Hola hola
 jester
 putoelquelolea
 Qué te parece
+pongo empezó a decir hola hola hola hola
+Hola buenas tardes
+sí Sí Sí jaló eres un crack Fabricio
+Hola buenas tardes cómo anda
+es justo y necesario
+chingón
+Hello
+Hello
+Chester

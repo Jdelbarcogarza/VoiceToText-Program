@@ -7,7 +7,6 @@ from controllers import *
 app = Flask(__name__)
 CORS(app)
 
-
 currentID = [0]
 
 @app.route('/record')
@@ -49,4 +48,5 @@ def PATCH_DATA():
 def index():
     return render_template("index.html")
 
-app.run(debug = True)
+if __name__ == '__main__':
+    app.run(debug = True)

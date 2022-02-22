@@ -5,20 +5,25 @@
 }
 
 #TitleTxt{
-    font-family: 'Times New Roman' !important;
+    font-family: 'Courier New' !important;
     font-size: 6vmin;
     color: white;
 }
 
+.btn {
+    font-family: 'Courier New';
+    font-size: 1.5vw;
+}
+
 #PhraseContainer{
-    margin-top: 20vh;
+    margin-top: 22vh;
     height: 80vh;
-    padding-left: 5vh;
+    padding-left: 7vh;
 }
 
 #btnSection{
     justify-content: center;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
 }
 
 .col-sm-4{
@@ -43,8 +48,4 @@
     background-color: rgb(241, 239, 239);
     border-radius: 25px;
     color: blue;
-}
-
-body {
-    background-color: white;
 }
