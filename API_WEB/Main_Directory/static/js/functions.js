@@ -4,10 +4,10 @@ const urlload= 'http://127.0.0.1:5000/load'
 const urlpatch= 'http://127.0.0.1:5000/patch-data'
 const recordbtn = document.getElementById("AddPhraseBtn");
 const box = document.getElementById("TextBox");
-const COLORS = ["#707ce3","#11468F", "#FFAA4C", "#5089C6", "#93329E", "#C54B6C", "#E75480", "#05C3DD", "#218B82", "#FFA600", "#d8db07"];
-let colors = ["#707ce3","#11468F", "#FFAA4C", "#5089C6", "#93329E", "#C54B6C", "#E75480", "#05C3DD", "#218B82", "#FFA600", "#d8db07"];
-const FONTFAMILIES = ["Century Gothic", "Brush Script MT", "Lucida Console","Papyrus", "Goudy Old Style", "Lucida Sans Typewriter", "Andale Mono", "Geneva", "Futura"]
-let fontfamilies = ["Century Gothic", "Brush Script MT", "Lucida Console","Papyrus", "Goudy Old Style", "Lucida Sans Typewriter", "Andale Mono", "Geneva", "Futura"]
+// const COLORS = ["#707ce3","#11468F", "#FFAA4C", "#5089C6", "#93329E", "#C54B6C", "#E75480", "#05C3DD", "#218B82", "#FFA600", "#d8db07"];
+let colors = ["#211b5e","#1600a1", "#5f0087", "#121111"];
+const COLORS = ["#211b5e","#1600a1", "#5f0087", "#121111"];
+const fontfamilies = ["Monospace"]
 const sizes = ["2vw", "2.2vw", "2.5vw", "3vw", "3.5vw"];
 
 
@@ -28,14 +28,8 @@ function add_content(content){
 
         // Si el array de colores esta vacio, hay que resetearlo
         if (colors.length == 0)
-        {
-            colors = COLORS.slice(0);
-        }
-
-        // Si el array de fonts esta vacio, hay que resetearlo
-        if (fontfamilies.length == 0)
-        {
-            fontfamilies = FONTFAMILIES.slice(0);
+         {
+             colors = COLORS.slice(0);
         }
 
         // Seleccionar atributos de cada frase
@@ -44,16 +38,10 @@ function add_content(content){
         const size = sizes[Math.floor(Math.random()*sizes.length)];
         const phrasebtn = document.createElement("button");
 
-        // Eliminar colores de la lista
+        // // Eliminar colores de la lista
         let index = colors.indexOf(color);
         if (index > -1) {
-            colors.splice(index, 1); // 2nd parameter means remove one item only
-        }
-
-        // Eliminar fonts de la lista
-        index = fontfamilies.indexOf(font);
-        if (index > -1) {
-            fontfamilies.splice(index, 1); // 2nd parameter means remove one item only
+             colors.splice(index, 1); // 2nd parameter means remove one item only
         }
 
         // set an ID to the last element added
