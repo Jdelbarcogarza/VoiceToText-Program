@@ -25,7 +25,7 @@ function add_content(content){
         recordbtn.innerText = "Agrega una frase";
     }
     for(var key of Object.keys(content)){
-
+        
         // Si el array de colores esta vacio, hay que resetearlo
         if (colors.length == 0)
         {
@@ -62,9 +62,12 @@ function add_content(content){
         phrasebtn.className ="texto";
         phrasebtn.style.color = color;
         phrasebtn.style.fontFamily = font;
-        phrasebtn.style.fontSize = size;
-
+        phrasebtn.style.fontSize = size;      
         box.insertBefore(phrasebtn, box.firstChild)
+        var idtext = "#"+ key;
+        $(idtext).fadeIn(1000);
+        
+
 
         // Se imprime en la consola del browser cada una de las phrases que contiene el diccionario.
         console.log(key + " : " + content[key]); 
@@ -118,7 +121,12 @@ function POST_omitphrase(id){
         if(this.readyState == 4 && this.status == 200){
             console.log(this.responseText);
             const toremove = document.getElementById(id)
-            toremove.remove();
+            //crea variable para hacer selección de Jquery con id de objeto dom.
+            idtext = "#"+ id;
+            //Función JQUERY para Fade out (primer parámetro velocidad en ms y segundo es función a ejecutar al terminar fade.)
+            $(idtext).fadeOut(500,function(){
+                toremove.remove();
+            });
         }else{
             //
         }
@@ -142,8 +150,13 @@ box.addEventListener('click', (event) => {
     if (!isButton){
         return;
     }
+    /// Fix.
     console.dir(event.target.id);
-    POST_omitphrase(event.target.id);
+    const id_to_Send = parseInt(event.target.id);
+    console.log(id_to_Send);
+    console.log(typeof(id_to_Send));
+    console.log(typeof(id_to_Send.toString()));
+    POST_omitphrase(id_to_Send.toString());
 })
 
 /* TODO: DEBEMOS EVITAR QUE SI SE LE DA REFRESH A LA PÁGINA QUE NO SE ACTIVE EL MICRÓFONO.

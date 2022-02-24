@@ -28,7 +28,9 @@ def retrieveData():
     phrases ={}
     key = 0
     for i in text:
+        
         if i[0] == '#':
+            key += 1
             continue
 
         phrases[str(key)] = i

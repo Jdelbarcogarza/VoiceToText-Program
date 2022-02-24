@@ -1,41 +1,41 @@
-####None
-##computadora
-#probando
-##None
+#None
+#computadora
+probando
+None
 Jambo
 raro
 estado
-#120
-###Hola
-#####probando
-#Hola
+120
+Hola
+probando
+Hola
 Bugambilia
-####komiload se prende el micro y digo algo
-####borrando
-#working
-####conversión
-#####Hola
-##cortina
-##ratón
-#pingüino
-######cigüeña
-#####None
-###niño
-#####Hola
-##prueba
-#probando
-#######Hola
-##cigüeña
+komiload se prende el micro y digo algo
+borrando
+working
+conversión
+Hola
+cortina
+ratón
+pingüino
+cigüeña
+None
+niño
+Hola
+prueba
+probando
+Hola
+cigüeña
 estupefaciente
 necesito comer
-##ayuda
+ayuda
 nmms qp
 hellou :D 
 chaos space marine
-###the place where he inserted the blade
+the place where he inserted the blade
 bruh
 itc es ser gei avea
-#mmmm 
+mmm 
 uwu
 el articlo 14 de la constitucion mexicana de los estados unidos mexicanos estipula claramente el hecho de que comas pito
 Hola hola
@@ -47,7 +47,13 @@ Hola buenas tardes
 sí Sí Sí jaló eres un crack Fabricio
 Hola buenas tardes cómo anda
 es justo y necesario
-chingón
-Hello
-Hello
-Chester
+#chingón
+#Hello
+#Hello
+#Chester
+#Buenos días
+#buenas noches
+#okay
+#algo y me está fallando espérate Hola
+#Ah Mira pues sí me reconoció algo me está fallando al salón cita así está hablando ahorita el pedo que tengo es que cuando quiero eliminar una frase no me está algo de los identificadores me está fallando porque no agarra
+#Hola buenas tardes
