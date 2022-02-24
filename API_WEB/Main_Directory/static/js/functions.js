@@ -130,8 +130,10 @@ window.onload = GET_phrases();
 
 //Record new phrase
 recordbtn.addEventListener("click", function(){   
+    recordbtn.innerText = "Grabando"
     GET_phrase();
 });
+
 box.addEventListener('click', (event) => {
     const isButton = event.target.nodeName === 'BUTTON';
     if (!isButton){
