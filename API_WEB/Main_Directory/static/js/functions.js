@@ -50,12 +50,12 @@ function add_content(content){
         phrasebtn.style.color = color;
         phrasebtn.style.fontFamily = font;
         phrasebtn.style.fontSize = size;      
-        box.insertBefore(phrasebtn, box.firstChild)
-        var idtext = "#"+ key;
-        $(idtext).fadeIn(1000);
         
+        var idtext = "#"+ key;
+        box.insertBefore(phrasebtn, box.firstChild)
+        $(idtext).fadeIn(2500);
 
-
+        
         // Se imprime en la consola del browser cada una de las phrases que contiene el diccionario.
         console.log(key + " : " + content[key]); 
     }
@@ -145,6 +145,3 @@ box.addEventListener('click', (event) => {
     console.log(typeof(id_to_Send.toString()));
     POST_omitphrase(id_to_Send.toString());
 })
-
-/* TODO: DEBEMOS EVITAR QUE SI SE LE DA REFRESH A LA PÁGINA QUE NO SE ACTIVE EL MICRÓFONO.
-*/
