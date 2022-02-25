@@ -5,7 +5,7 @@ from os import getcwd
 def listen_speech():
     r = sr.Recognizer()
     with sr.Microphone() as source:
-        r.pause_threshold = 0.8
+        r.pause_threshold = 0.5
         phrase = r.listen(source)
 
         try: 

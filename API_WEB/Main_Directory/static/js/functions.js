@@ -28,7 +28,7 @@ function add_content(content){
         // Si el array de colores esta vacio, hay que resetearlo
         if (colors.length == 0)
          {
-             colors = COLORS.slice(0);
+            colors = COLORS.slice(0);
         }
 
         // Seleccionar atributos de cada frase
@@ -49,10 +49,11 @@ function add_content(content){
         phrasebtn.className ="texto";
         phrasebtn.style.color = color;
         phrasebtn.style.fontFamily = font;
-        phrasebtn.style.fontSize = size;      
+        phrasebtn.style.fontSize = size;    
+
         box.insertBefore(phrasebtn, box.firstChild)
         var idtext = "#"+ key;
-        $(idtext).fadeIn(1000);
+        $(idtext).fadeIn(2500);
         
 
 

@@ -41,6 +41,7 @@
     background: transparent;
     border: none !important;
     margin-right: 5vw; 
+    display: none;
 }
 
 .texto:hover{
