@@ -27,7 +27,7 @@ function add_content(content){
         
         // Si el array de colores esta vacio, hay que resetearlo
         if (colors.length == 0)
-         {
+        {
             colors = COLORS.slice(0);
         }
 
